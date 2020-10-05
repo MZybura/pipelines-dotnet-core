@@ -40,5 +40,5 @@ stages:
                         inputs:
                           azureSubscription: 'Service Connection to devops-deploy-test-rg'
                           appName: 'mazy-devops-deploy-test'
-                          package: '$(System.ArtifactsDirectory)/**/*.zip'
+                          package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
 
