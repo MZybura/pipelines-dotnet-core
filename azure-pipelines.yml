@@ -27,7 +27,7 @@ steps:
     artifactName: 'myWebsiteName'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Service Connection to devops-deploy-test-rg'
-    appName: 'mazy-devops-deploy-test'
+    azureSubscription: 'marcin-publish-profile-test-connection'
+    appName: 'mazy-pwc-deployment-test'
     package: '$(System.ArtifactsDirectory)/**/*.zip'
 
